@@ -5,3 +5,5 @@ end
 def sort_array_dec(array)
   reverse_array = []
   reverse_array << array.sort_by {|i| -i.length}
+  reverse_array
+end
