@@ -26,3 +26,7 @@ end
 def find_a(array)
   array.select{|string| string[0] == "a"}
 end
+
+def sum_array(array)
+  array.each_with_index {|int, index| int + int[index-1]}
+end
