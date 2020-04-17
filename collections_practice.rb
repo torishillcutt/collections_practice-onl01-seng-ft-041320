@@ -4,6 +4,6 @@ end
 
 def sort_array_desc(array)
   reverse_array = []
-  reverse_array << array.collect {|i| i.length * -1}
-  reverse_array.sort
+  reverse_array << array.sort_by {|i| -i.length}
+  reverse_array
 end
