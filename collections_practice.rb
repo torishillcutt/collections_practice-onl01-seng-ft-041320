@@ -32,5 +32,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each {|string| "#{string}s" unless string == array[2]}
+  array.collect {|string| "#{string}s" unless string == array[2]}
 end
