@@ -32,6 +32,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect {|string| "#{string}s" unless string == array[1]}
-  return "feet"
+  array.each_with_index.collect {|string, index| "#{string}s" unless index == 1}
 end
