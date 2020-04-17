@@ -13,5 +13,6 @@ end
 def swap_elements(array)
   array.sort do |1,2|
     array[1] <=> array[2]
+  end
   array
 end
